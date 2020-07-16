@@ -1,18 +1,26 @@
+
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { VisComponent } from './vis/vis.component';
+
 
 @NgModule({
-  declarations: [
-    AppComponent
+  declarations: [    
+    AppComponent,
+    VisComponent    
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
+  imports: [    
+    CommonModule,
+    FormsModule,    
+    ReactiveFormsModule,
+    BrowserModule
   ],
-  providers: [],
+  entryComponents: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
